@@ -1,0 +1,68 @@
+﻿@model IEnumerable<LF.Application.ViewModels.LancamentoFinanceiroVM>
+@{
+    ViewData["Title"] = "ConsultarLancamento";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Consultar Lançamentos</h4>
+
+<p>
+    <a asp-action="CadastrarLancamento" class="btn btn-primary">Cadastrar Lançamento</a>
+</p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.DataHora)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Valor)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Tipo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Status)
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        @if (Model != null)
+        {
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DataHora)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Valor)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tipo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Status)
+                        </td>
+                        <td>
+                            <div class="dropdown">
+                                <a class="dropdown-toggle btn btn-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Ações</a>
+                                <div class="dropdown-menu">
+                                    <a class=" dropdown-item" asp-action="ConciliarLancamento" asp-route-id="@item.Id">Conciliar</a>
+                                    <hr class="dropdown-divider">
+                                    <a class=" dropdown-item" asp-action="EditarLancamento" asp-route-id="@item.Id">Editar</a>
+                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" asp-action="VisualizarLancamento" asp-route-id="@item.Id">Visualizar</a>
+                                    <hr class="dropdown-divider">
+                                    <a class="dropdown-item" asp-action="RemoverLancamento" asp-route-id="@item.Id">Remover</a>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        }
+
+    </table>
+

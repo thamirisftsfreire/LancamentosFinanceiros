@@ -1,0 +1,98 @@
+﻿@model RelatorioBalancoMensalViewModel
+
+@{
+    ViewData["Title"] = "RelatorioBalancoMensal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Relatório Balanço Diário</h4>
+
+
+<form asp-action="RelatorioBalancoMensal">
+    <div class="row">
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoMensalSearchModel.DataInicial" class="control-label">Data Inicial</label>
+            <input asp-for="BalancoMensalSearchModel.DataInicial" type="date" class="form-control" />
+            <span asp-validation-for="BalancoMensalSearchModel.DataInicial" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoMensalSearchModel.DataFinal" class="control-label">Data Final</label>
+            <input asp-for="BalancoMensalSearchModel.DataFinal" type="date" class="form-control" />
+            <span asp-validation-for="BalancoMensalSearchModel.DataFinal" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label><br /></label>
+            <div class="col-md-4">
+                <input type="submit" value="Buscar" class="btn btn-primary" />
+            </div>
+        </div>
+        <hr />
+    </div>
+</form>
+@if (Model != null)
+{
+    <div class="row">
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoMensalViewModel.Data" class="control-label">Data Balanço</label>
+            <input asp-for="BalancoMensalViewModel.Data" type="text" class="form-control" disabled="disabled" />
+            <span asp-validation-for="BalancoMensalViewModel.Data" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoMensalViewModel.ValorTotalCredito" class="control-label">Total Credito Mensal</label>
+            <input asp-for="BalancoMensalViewModel.ValorTotalCredito"  class="form-control" disabled="disabled" />
+            <span asp-validation-for="BalancoMensalViewModel.ValorTotalCredito" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoMensalViewModel.ValorTotalDebito" class="control-label">Total Débito Mensal</label>
+            <input asp-for="BalancoMensalViewModel.ValorTotalDebito"  class="form-control" disabled="disabled" />
+            <span asp-validation-for="BalancoMensalViewModel.ValorTotalDebito" class="text-danger"></span>
+        </div>
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoMensalViewModel.ValorTotalSaldo" class="control-label">Total Saldo Mensal</label>
+            <input asp-for="BalancoMensalViewModel.ValorTotalSaldo" class="form-control" disabled="disabled" />
+            <span asp-validation-for="BalancoMensalViewModel.ValorTotalSaldo" class="text-danger"></span>
+        </div>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                   Data Balanço
+                </th>
+                <th>
+                    Valor Total Crédito
+                </th>
+                <th>
+                    Valor Total Débito
+                </th>
+                <th>
+                    Valor Total Saldo
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var balancoDiario in Model.BalancosDiariosViewModel)
+            {
+                <tr>
+                    <td>
+                        @balancoDiario.Data
+                    </td>
+                    <td>
+                        @balancoDiario.ValorTotalCredito
+                    </td>
+                    <td>
+                        @balancoDiario.ValorTotalDebito
+                    </td>
+                    <td>
+                        @balancoDiario.ValorTotalSaldo
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+}

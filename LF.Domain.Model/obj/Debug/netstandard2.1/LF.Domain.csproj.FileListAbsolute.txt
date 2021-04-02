@@ -1,0 +1,17 @@
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\bin\Debug\netstandard2.1\LF.Domain.deps.json
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\bin\Debug\netstandard2.1\LF.Domain.dll
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\bin\Debug\netstandard2.1\LF.Domain.pdb
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.AssemblyInfoInputs.cache
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.AssemblyInfo.cs
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.csproj.CoreCompileInputs.cache
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.dll
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.pdb
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\bin\Debug\netstandard2.1\LF.Domain.deps.json
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\bin\Debug\netstandard2.1\LF.Domain.dll
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\bin\Debug\netstandard2.1\LF.Domain.pdb
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.AssemblyInfoInputs.cache
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.AssemblyInfo.cs
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.csproj.CoreCompileInputs.cache
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.dll
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.pdb
+C:\RepositorioGit\LancamentosFinanceiros\LF.Domain.Model\obj\Debug\netstandard2.1\LF.Domain.csprojAssemblyReference.cache

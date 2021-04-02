@@ -1,0 +1,64 @@
+﻿@model RelatorioBalancoDiarioViewModel
+
+@{
+    ViewData["Title"] = "RelatorioBalancoDiario";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h4>Relatório Balanço Diário</h4>
+
+
+<form asp-action="RelatorioBalancoDiario">
+    <div class="row">
+        <div class="form-group col-md-3">
+            <label asp-for="BalancoDiarioSearchModel.Data" class="control-label">Data</label>
+            <input asp-for="BalancoDiarioSearchModel.Data" type="date" class="form-control" />
+            <span asp-validation-for="BalancoDiarioSearchModel.Data" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <div class="col-md-4">
+                <label><br /></label>
+                <input type="submit" value="Buscar" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Data do Balanço
+            </th>
+            <th>
+                Valor Total Crédito
+            </th>
+            <th>
+                Valor Total Débito
+            </th>
+            <th>
+                Valor Total Saldo
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    @if (Model != null)
+    {
+        <tbody>
+             <tr>
+                    <td>
+                        @Html.DisplayFor(model => model.BalancoViewModel.Data)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.BalancoViewModel.ValorTotalCredito)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.BalancoViewModel.ValorTotalDebito)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(model => model.BalancoViewModel.ValorTotalSaldo)
+                    </td>
+                </tr>
+        </tbody>
+    }
+
+</table>

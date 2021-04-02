@@ -1,0 +1,5 @@
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.CrossCutting.Ioc\bin\Debug\netstandard2.0\LF.CrossCutting.Ioc.deps.json
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.CrossCutting.Ioc\bin\Debug\netstandard2.0\LF.CrossCutting.Ioc.dll
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.CrossCutting.Ioc\obj\Debug\netstandard2.0\LF.CrossCutting.Ioc.csprojAssemblyReference.cache
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.CrossCutting.Ioc\obj\Debug\netstandard2.0\LF.CrossCutting.Ioc.AssemblyInfoInputs.cache
+C:\Users\vtham\source\repos\LancamentosFinanceiros\LF.CrossCutting.Ioc\obj\Debug\netstandard2.0\LF.CrossCutting.Ioc.AssemblyInfo.cs
